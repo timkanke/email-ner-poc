@@ -16,7 +16,14 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from django.conf import settings
+from django.conf.urls.static import static
+
+from ner.views import Index, ItemListView, ItemUpdateView
 
 urlpatterns = [
     path("admin/", admin.site.urls),
-]
+    path("", Index.as_view(), name="index"),
+    path("itemlist/", ItemListView.as_view(), name="itemlistview"),
+    path("itemview/<int:pk>/", ItemUpdateView.as_view(), name="itemupdateview"),
+] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
