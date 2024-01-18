@@ -25,7 +25,7 @@ class Item(models.Model):
     last_modified = models.DateTimeField(auto_now=True, null=True)
 
 
-class Tag(models.Model):
+class Entity(models.Model):
     id = models.AutoField(primary_key=True) # automates the ID 
     term = models.CharField(max_length=255, blank=True, null=True) # tag is the name or place 
     label = models.CharField(max_length=255, blank=True, null=True) # label will specify if it is a person or location
