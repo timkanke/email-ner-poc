@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     "ner",
     "django_filters",
+    "crispy_bootstrap5",
     "crispy_forms",
     "django_tables2",
     "django_bootstrap5",

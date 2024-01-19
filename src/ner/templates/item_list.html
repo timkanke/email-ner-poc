@@ -24,7 +24,7 @@
                     {% bootstrap_button 'Filter' button_type="submit" button_class="btn-primary btn-sm" %}
                     {% bootstrap_button 'Reset' button_type="reset" button_class="btn-outline-primary btn-sm" %}
                 </form>
-
+                {{ form|crispy}}
                 <div class="row pt-3">
                     <a href="{% clean_url %}"><button class="btn btn-warning btn-sm">Clear Filters</button></a>
                 </div>

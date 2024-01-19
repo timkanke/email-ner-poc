@@ -76,9 +76,9 @@
         <div class="row">
             <div class="col-md-10 mb-0">
                 <h3>ID: {{ object.pk }}</h3>
-                {{ form.date }}
-                {{ form.author }}
-                {{ form.title }}
+                {{ form.date|as_crispy_field }}
+                {{ form.author|as_crispy_field }}
+                {{ form.title|as_crispy_field }}
             </div>
             <div class="col-md-2">
             </div>
@@ -86,7 +86,7 @@
 
         <div class="row">
             <div class="col-md-5 mb-0 bg-light">
-                {{ form.body }}
+                {{ form.body|as_crispy_field }}
             </div>
 
             <div class="col-md-2 mb-0">
@@ -105,18 +105,18 @@
                 </div>
                 <div class="card p-3 mt-1">
                     <div class="col my-0 py-0">
-                        {{ form.publish }}
+                        {{ form.publish|as_crispy_field }}
                         <hr>
-                        {{ form.pool_report }}
-                        {{ form.off_the_record }}
+                        {{ form.pool_report|as_crispy_field }}
+                        {{ form.off_the_record|as_crispy_field }}
                         <hr>
                         <div class="col my-0 py-0">
-                            {{ form.review_status }}
+                            {{ form.review_status|as_crispy_field }}
                         </div>
                     </div>
                 </div>
                 <div class="row mt-4">
-                    {{ form.notes }}
+                    {{ form.notes|as_crispy_field }}
                 </div>
             </div>
         </div>
