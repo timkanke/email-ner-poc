@@ -12,9 +12,49 @@
     body: |-
       <div><div><div><p>A big thanks to VOA’s Patsy Widakuswara for capturing audio of POTUS’ quick q&amp;a: </p><div><a href="https://otter.ai/u/rlhBpfpGV5svznMhT2ZchT8iLlM">https://otter.ai/u/rlhBpfpGV5svznMhT2ZchT8iLlM</a></div><div><br></div><div>Tech difficulties prevented your pooler from transcribing en route, apologies, but sending full quotes at some point today</div><p>Press Sec Jen Psaki released the following statement on Republicans’ infrastructure counterproposal shortly before takeoff</p><p>“We are grateful for the work of Senator Capito and her colleagues on this proposal. It is encouraging to see her group come forward with a substantially increased the funding level—nearing $1 trillion. We appreciate the hard work that went in to making this proposal and continuing these negotiations. Senator Capito told the President that her team would provide us with more details later today, and we look forward to getting that information. At first review, we note several constructive additions to the group’s previous proposals, including on roads, bridges and rail. At the same time, we remain concerned that their plan still provides no substantial new funds for critical job-creating needs, such as fixing our veterans’ hospitals, building modern rail systems, repairing our transit systems, removing dangerous lead pipes, and powering America’s leadership in a job-creating clean energy economy, among other things. Lastly, we are concerned that the proposal on how to pay for the plan remains unclear: we are worried that major cuts in COVID relief funds could imperil pending aid to small businesses, restaurants and rural hospitals using this money to get back on their feet after the crush of the pandemic.</p>As for the path forward, the President called Senator Capito thank her for the proposal, and to tell her that he would follow-up after getting additional detail. We are also continuing to explore other proposals that we hope will emerge. Though there are no votes in Congress next week, we will work actively with members of the House and Senate next week, so that there is a clear direction on how to advance much needed jobs legislation when Congress resumes legislative business during the week of June 7.”<p>AND passing along some background the WH..</p><p>Traveling with the President to Cleveland, Ohio:</p> <p>Bruce Reed, Deputy Chief of Staff</p><p>Jen Psaki, Press Secretary</p><p>Brian Deese, Director of the NEC</p><p>Daleep Singh, Deputy National Security Advisor/Deputy NEC Director</p><p>Ashley Williams, Deputy Director of Oval Office Operations</p><p>Stephen Goepfert, Personal Aide</p><p>Travis Dredd, Trip Director</p><p>Meghan Hays, Director of Message Planning</p><p>Jeff Nussbaum, Senior Presidential Speechwriter</p><p>Upon arrival to Joint Base Andrews, the President was greeted by Colonel Matthew Jones, 89<sup>th</sup> Airlift Wing Commander</p></div></div></div>-- <br><div><div><div>Christian Datoc</div><div>White House Correspondent</div><div>Washington Examiner</div><div></div><div></div><div></div><div></div><div></div></div></div>
     last_modified:
+- model: ner.item 
+  pk: 2
+  fields:
+    date: "2011-12-01T13:20:30+03:00"
+    author: Ella Barnes
+    title: Lunch with Staff
+    pool_report: True
+    publish: False
+    off_the_record: False
+    review_status: False
+    notes:
+    body: |-
+      <p>The White House shared the following:</p><div>&nbsp;</div><div>The Vice President and the Second Gentleman are joining the President and the First Lady at Le Diplomate.</div><p><br><br>--&nbsp;<br>&nbsp;</p><div><p>Steven Nelson</p><div>New York Post</div></div>
+    last_modified:
+- model: ner.item 
+  pk: 3
+  fields:./manage.py loaddata test_data
+    date: "2011-10-01T13:20:30+03:00"
+    author: Jackson Turner 
+    title: VP Departs 
+    pool_report: True
+    publish: False
+    off_the_record: False
+    review_status: False
+    notes:
+    body: |-
+      <p>Some members of the class of 2021 leaving the ceremony stopped and saluted as the motorcade drove through campus. We seem to have just missed what appears to be some incoming rain — cloudy and foreboding skies here in Annapolis.<br><br>VP arrived back at the helo after a short drive and walked up the steps at 1:25pm. Took off at 1:30 for the VP residence.<br><br>Pool is heading back to campus shortly.</p>
+    last_modified:
 - model: ner.entity
   pk: 1
   fields: 
     term: Rachel Moore
     label: Person
     item: 1
+- model: ner.entity
+  pk: 2
+  fields: 
+    term: Tommy Harris
+    label: Person
+    item: 2
+- model: ner.entity
+  pk: 3
+  fields: 
+    term: John Winters
+    label: Person
+    item: 3
