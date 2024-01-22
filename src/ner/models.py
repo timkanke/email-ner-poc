@@ -23,3 +23,10 @@ class Item(models.Model):
     notes = models.TextField(max_length=1000, blank=True, null=True)
     body = models.TextField(blank=True, null=True)
     last_modified = models.DateTimeField(auto_now=True, null=True)
+
+
+class Entity(models.Model):
+    id = models.AutoField(primary_key=True) # automates the ID 
+    term = models.CharField(max_length=255, blank=True, null=True) # tag is the name or place 
+    label = models.CharField(max_length=255, blank=True, null=True) # label will specify if it is a person or location
+    item = models.ForeignKey('Item', on_delete=models.CASCADE) # Foreign key links tag table to item table 

@@ -113,6 +113,16 @@
                         <div class="col my-0 py-0">
                             {{ form.review_status|as_crispy_field }}
                         </div>
+                        <div class="col my-0 py-0">
+                            <hr>
+                            <h3>Entities</h3>
+                            {% for entity in object.entity_set.all %}
+
+
+                            {{ entity.term }} 
+                            {{ entity.label }}
+                            {% endfor %}
+                        </div>
                     </div>
                 </div>
                 <div class="row mt-4">
