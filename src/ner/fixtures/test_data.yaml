@@ -28,7 +28,7 @@
     last_modified:
 - model: ner.item 
   pk: 3
-  fields:./manage.py loaddata test_data
+  fields:
     date: "2011-10-01T13:20:30+03:00"
     author: Jackson Turner 
     title: VP Departs 

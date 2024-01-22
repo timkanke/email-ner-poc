@@ -113,18 +113,38 @@
                         <div class="col my-0 py-0">
                             {{ form.review_status|as_crispy_field }}
                         </div>
-                        <div class="col my-0 py-0">
-                            <hr>
-                            <h3>Entities</h3>
-                            {% for entity in object.entity_set.all %}
-
-
-                            {{ entity.term }} 
-                            {{ entity.label }}
-                            {% endfor %}
-                        </div>
                     </div>
                 </div>
+                <div class="card p-3 mt-1">
+                    <div class="col my-0 py-0">
+                        <h5>Entities</h5>
+
+
+                        <table class="table">
+                            <thead>
+                              <tr>
+                                <th scope="col">Term</th>
+                                <th scope="col">Label</th>
+                                
+                              </tr>
+                            </thead>
+                            <tbody>
+                              
+                         
+
+
+                        {% for entity in object.entity_set.all %}
+                        <tr>
+                            <td>{{ entity.term }}</td>
+                            <td>{{ entity.label }}</td>
+                          </tr>
+                        
+                        {% endfor %}
+                    </tbody>
+                </table>
+                    </div>
+                </div>  
+                    
                 <div class="row mt-4">
                     {{ form.notes|as_crispy_field }}
                 </div>
